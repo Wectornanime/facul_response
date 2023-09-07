@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.05s ease-in-out;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.2em;
+}
+
+div {
+    width: 9em;
+    height: 9em;
+    background-color: red;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#box1 {
+    background-image: url("https://source.unsplash.com/featured/");
+}
+
+#box2 {
+    background-image: url("https://source.unsplash.com/featured/");
+}
+
+#box3 {
+    background-image: url("https://source.unsplash.com/featured/");
+}
+
+@media (min-width: 400px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    p {
+        font-size: 1.6em;
+    }
+
+    div {
+        width: 10em;
+        height: 10em;
+    }
+}
+
+@media (min-width: 600px) {
+    div {
+        width: 14em;
+        height: 14em;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 6em;
+    }
+
+    p {
+        font-size: 2.5em;
+    }
+
+    div {
+        width: 20em;
+        height: 20em;
+    }
+}
+
+@media (min-width: 1440px) {
+    h1 {
+        font-size: 8em;
+    }
+
+    p {
+        font-size: 4em;
+    }
+
+    div {
+        width: 25em;
+        height: 25em;
+    }
+}
+
+@media (max-height: 400px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    div {
+        width: 5em;
+        height: 5em;
+    }
+}
